@@ -9,10 +9,12 @@ namespace HomeWork
             if (a > b)
             {
                 return (a + b);
-            } else if (a == b)
+            }
+            else if (a == b)
             {
                 return (a * b);
-            } else
+            }
+            else
             {
                 return (a - b);
             }
@@ -31,7 +33,12 @@ namespace HomeWork
             else if (x < 0 && y < 0)
             {
                 return 3;
-            } else return 4;
+            }
+            else
+            {
+                return 4;
+            }
+                
         }
 
         static string Task3(double A, double B, double C)
@@ -42,15 +49,17 @@ namespace HomeWork
             {
                 max = A;
                 min = B;
-            } else
+            }
+            else
             {
                 max = B;
                 min = A;
             }
             if (C > max)
             {
-                max = C; 
-            } else if (C < min)
+                max = C;
+            }
+            else if (C < min)
             {
                 min = C;
             }
@@ -58,7 +67,7 @@ namespace HomeWork
 
             return $"{min}, {mid}, {max}";
         }
-        
+
         static string Task4(double a, double b, double c)
         {
             double D;
@@ -74,6 +83,7 @@ namespace HomeWork
                 x1 = (-b + Math.Sqrt(D)) / (2 * a);
                 x2 = (-b - Math.Sqrt(D)) / (2 * a);
             }
+
             return $"x1 = {x1}, x2 = {x2}";
         }
 
@@ -84,7 +94,6 @@ namespace HomeWork
 
             int result1 = (int)(number / 10);
             int result2 = number % 10;
-            
             switch (result1)
             {
                 case 1:
@@ -143,8 +152,8 @@ namespace HomeWork
                                 }
                             default: break;
                         }
-                        break; 
-                    }                   
+                        break;
+                    }
                 case 2:
                     {
                         sresult1 = "двадцать";
@@ -234,7 +243,7 @@ namespace HomeWork
                         sresult2 = "девять";
                         break;
                     }
-                default : break; 
+                default: break;
             }
 
             return $"{sresult1} {sresult2}";
